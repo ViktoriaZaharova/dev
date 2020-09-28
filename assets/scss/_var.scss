@@ -1,0 +1,83 @@
+/*COLOR*/
+$colorRed: #A62525;
+$colorRedDark: #8B0E0E;
+$colorBlueDark: #364859;
+$colorPage: $colorBlueDark;
+$colorPage10: transparentize($colorBlueDark, .1);
+$colorPage20: transparentize($colorBlueDark, .2);
+$colorPage30: transparentize($colorBlueDark, .3);
+$colorPage40: transparentize($colorBlueDark, .4);
+$colorPage50: transparentize($colorBlueDark, .5);
+$colorPage60: transparentize($colorBlueDark, .6);
+$colorPage70: transparentize($colorBlueDark, .7);
+$colorPage80: transparentize($colorBlueDark, .8);
+$colorPage90: transparentize($colorBlueDark, .9);
+/*FONTS*/
+$fontIBM: 'IBM Plex Sans';
+$fontED: 'EuropeDemi';
+$fontAvenir: 'Avenir Next Cyr';
+
+
+:root{
+	--padding100: 100px;
+	--padding90: 90px;
+	--padding80: 80px;
+	--padding70: 70px;
+	--padding60: 60px;
+	--padding50: 50px;
+	--padding40: 40px;
+	--padding30: 30px;
+	--padding20: 20px;
+	--padding10: 10px;
+	--margin-100: -100px;
+	--margin-90: -90px;
+	--margin-80: -80px;
+	--margin-70: -70px;
+	--margin-60: -60px;
+	--margin-50: -50px;
+	--margin-40: -40px;
+	--margin-30: -30px;
+	--margin-20: -20px;
+	--margin-10: -10px;
+	--margin100: 100px;
+	--margin90: 90px;
+	--margin80: 80px;
+	--margin70: 70px;
+	--margin60: 60px;
+	--margin50: 50px;
+	--margin40: 40px;
+	--margin30: 30px;
+	--margin20: 20px;
+	--margin10: 10px;
+    --mainFontSize: 1.125rem;
+    --fontTitleMenu: 1rem;
+    --hMainInputButton: 65px;
+    --mhMapsBox: 615px;
+    --colorScroll: $colorRed;
+    --bgScroll: #fff;
+}
+
+
+@mixin clear() {
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+.clear{
+	&::before,
+	&::after {
+		content: "";
+		display: block;
+		display: table;
+	}
+	&::after {
+		clear: both;
+	}
+}
