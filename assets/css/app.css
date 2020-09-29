@@ -10638,7 +10638,216 @@ figure figcaption {
     display: block;
 }
 
+.input-box.disabled {
+    opacity: .5;
+}
+
+.form-cabinet .input-box input:not([type="submit"]), .form-cabinet .input-box__input, .form-cabinet .input-box__textarea {
+    background: rgba(54, 72, 89, 0.06)
+}
+
+.form-cabinet .input-box {
+    width: 32%;
+}
+
+.form-cabinet .col-block .input-box {
+    width: 100%;
+}
+
+.form-cabinet .input-box-average {
+    width: 62%;
+}
+
+.form-cabinet .input-box-min {
+    width: 89px;
+}
+
+.form-cabinet .input-box-company {
+    width: 66%;
+}
+
+.form-cabinet .subscribe-field__button {
+    height: 60px;
+    max-width: 260px;
+    width: 100%;
+}
+
+.tabs-mobile-dropdown {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 10px;
+    font-size: 14px;
+    margin: 0 0 16px;
+    border-bottom: 2px solid rgba(54, 72, 89, 0.2);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.tabs-mobile-dropdown.active {
+    color: #A62525;
+    border-bottom-color: #A62525;
+}
+
+.tabs-mobile-dropdown.active .icon-drop svg {
+    transform: rotate(180deg);
+    fill: #A62525;
+}
+
+.icon-drop {
+    width: 10px;
+    height: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-drop svg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    fill: #364859;
+    transition: .3s ease;
+}
+
+
+/*modal*/
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: none;
+    background: #364859;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.modal__div {
+    position: fixed;
+    z-index: 101;
+    top: 45%;
+    transform: translate(0, -50%);
+    right: 0;
+    max-width: 630px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal__wrapper{
+    width: 100%;
+    height: 100%;
+    background: #ffff;
+    box-shadow: -60px 0px 60px rgba(54, 73, 90, 0.3);
+    overflow-x: auto;
+}
+
+.modal-head {
+    border-bottom: 2px solid rgba(54, 72, 89, 0.2);
+    padding: 35px 60px;
+}
+
+.modal__close {
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 120px 77px;
+    height: 100%;
+}
+
+.modal-body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 42px;
+    letter-spacing: 0.03em;
+    font-family: 'EuropeDemi', sans-serif;
+}
+
+.description-modal {
+    margin: 10px 0 50px;
+    font-size: 18px;
+}
+
+.form-modal .input-box input:not([type="submit"]), .form-modal .input-box__input {
+    height: 75px;
+    background: rgba(54, 72, 89, 0.06);
+}
+
+.form-modal .input-box {
+    margin: 0 0 15px;
+}
+
+.form-modal .subscribe-field__button {
+    width: 100%;
+    font-size: 22px;
+    height: 100px;
+}
+
+.form-modal .privacy-policy {
+    margin: 15px 0 50px;
+    font-size: 12px;
+    color: rgba(54, 72, 89, 0.4);
+}
+
+.form-modal .privacy-policy i {
+    margin: 0 15px 0 0;
+    opacity: .2;
+    font-size: 20px;
+}
+
 /*main media*/
+@media (max-width: 1440px) {
+    .modal__div {
+        max-width: 479px;
+    }
+
+    .modal-head {
+        padding: 40px 44px;
+    }
+
+    .modal-body {
+        padding: 100px 55px 30px;
+    }
+
+    .modal-body h2 {
+        font-size: 28px;
+    }
+
+    .description-modal {
+        margin: 20px 0 40px;
+        font-size: 14px;
+    }
+
+    .form-modal .input-box input:not([type="submit"]), .form-modal .input-box__input {
+        height: 50px;
+    }
+
+    .form-modal .input-box {
+        margin: 0 0 10px;
+    }
+
+    .form-modal .privacy-policy {
+        margin: 10px 0 40px;
+    }
+
+    .form-modal .subscribe-field__button {
+        height: 60px;
+        font-size: 14px;
+    }
+}
 @media (max-width: 1350px) {
     .contacts-order {
         padding: 63px 25px 45px;
@@ -10810,6 +11019,46 @@ figure figcaption {
         padding: 30px 20px 40px;
     }
 }
+
+@media (max-width: 768px) {
+    .modal-head {
+        padding: 20px 40px;
+    }
+
+    .modal__close {
+        font-size: 16px;
+    }
+
+    .modal-body {
+        padding: 136px 40px 30px 30px;
+    }
+
+    .modal-body h2 {
+        font-size: 24px;
+    }
+
+    .description-modal {
+        margin: 10px 0 60px;
+        font-size: 12px;
+    }
+
+    .modal__div {
+        max-width: 384px;
+    }
+
+    .form-modal .input-box input:not([type="submit"]), .form-modal .input-box__input {
+        font-size: 10px;
+    }
+
+    .form-modal .privacy-policy {
+        margin: 20px 0 40px;
+        font-size: 8px;
+    }
+
+    .form-modal .subscribe-field__button {
+        font-size: 12px;
+    }
+}
 @media (max-width: 650px) {
     .order-content__column--right {
         width: 100%;
@@ -10973,6 +11222,39 @@ figure figcaption {
     .amount input {
         font-size: 10px;
     }
+
+    .form-cabinet .input-box {
+        width: 100%;
+    }
+
+    .form-cabinet .input-box-average {
+        width: 100%;
+    }
+
+    .form-cabinet .input-box-min {
+        width: 93px;
+    }
+
+    .form-cabinet .tabs-title {
+        display: none;
+    }
+
+    .tabs-mobile-dropdown {
+        display: flex;
+    }
+
+    .form-cabinet .tabs-wrapper {
+        margin: 0 0 30px;
+    }
+
+
+    .cabinet-dropdown__icon {
+        width: 22px;
+        min-width: 22px;
+        height: 22px;
+        margin: 0 10px 0 0;
+        padding: 5px;
+    }
 }
 
 @media screen and (max-width: 40em) {
@@ -11026,7 +11308,7 @@ figure figcaption {
         width: calc(100% + 40px);
         bottom: 0;
         left: 50%;
-        transform: translate(-50%,0);
+        transform: translate(-50%, 0);
         background: #364859;
     }
 
@@ -11080,5 +11362,30 @@ figure figcaption {
         margin: 0 0 0 auto;
     }
 
+    .modal__div {
+        max-width: none;
+    }
 
+    .modal-head {
+        padding: 20px;
+    }
+
+    .modal-body {
+        padding: 60px 20px 0;
+    }
+
+    .modal-body h2 {
+        font-size: 20px;
+    }
+
+    .description-modal {
+        margin: 30px 0 20px;
+        font-size: 10px;
+    }
+
+    .form-modal .subscribe-field__button {
+        width: calc(100% + 40px);
+        max-width: none !important;
+        margin: 0 -20px;
+    }
 }
