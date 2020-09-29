@@ -139,8 +139,10 @@
                             </div>
                         </div>
                         <div class="header-box__auth">
-                            <a href="#">Регистрация </a>
-                            <a href="#"> Войти</a>
+                            <div class="cabinet-dropdown-wrapper">
+                                <div class="cabinet-dropdown__icon"><img src="assets/img/svg/user.svg" alt=""></div>
+                                <div class="cabinet-dropdown__text">Личный кабинет</div>
+                            </div>
                         </div>
                         <div class="header-box__links">
                             <a href="#" class="link link--circle">
@@ -152,230 +154,279 @@
                         </div>
                     </div>
                 </header>
-                <div class="crumbs-box-wrapper">
-                    <ul class="crumbs-box">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="javascript:;">Корзина</a></li>
-                    </ul>
-                </div>
+
             </div>
             <div class="header-content"></div>
         </div>
         <div class="content-box">
-            <div class="outer-content outer-content--column order-content">
-                <div class="outer-content__column order-content__column">
+            <div class="outer-content outer-content--column cabinet-content">
+                <div class="outer-content__column outer-content__column--left cabinet-left-column">
+                    <div class="btn-cabinet-menu">
+                        <div class="cabinet-menu__icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="cabinet-menu__text">Мои кабинет</div>
+                    </div>
+
+                    <ul class="cabinet-menu">
+                        <li class="cabinet-menu-item"><a href="#" class="cabinet-menu-links active">Мой кабинет</a></li>
+                        <li class="cabinet-menu-item"><a href="#" class="cabinet-menu-links">Мои заказы</a></li>
+                        <li class="cabinet-menu-item"><a href="#" class="cabinet-menu-links">Вопросы и ответы</a></li>
+                        <li class="cabinet-menu-item"><a href="#" class="cabinet-menu-links">Личные данные</a></li>
+                        <li class="cabinet-menu-item"><a href="#" class="cabinet-menu-links">Сервис</a></li>
+                    </ul>
+
+                    <a href="#" class="links-edit">Выйти</a>
+                </div>
+
+                <div class="outer-content__column cabinet-content__column">
                     <h1 class="product-title">
-                        <span class="product-title__text">Корзина </span>
-                        <span class="product-title__availability">(2 товара)</span>
+                        <span class="product-title__text">Личный кабинет </span>
                     </h1>
 
-                    <div class="order-line__product">
-                        <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
-                                                                         alt=""></a>
-                        <div class="order-line__product-info">
-                            <a href="#" class="order-line__product-name">Штабелер Складская техника B 10.30-EX</a>
-                            <div class="order-line__product-article">Артикул: 08854-20.000.00</div>
-                        </div>
-                        <div class="order-line__product-price">64 990 тенге</div>
+                    <div class="cabinet-box">
+                        <div class="cabinet-box__line">
+                            <h3 class="cabinet-box__title">Мои данные</h3>
 
-                        <div class="amount">
-                            <span class="down"></span>
-                            <input type="text" value="1"/>
-                            <span class="up"></span>
+                            <a href="#" class="links-edit-cabinet">Изменить</a>
                         </div>
 
-                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
-
-                        <a href="#" class="add-favorites"></a>
-
-                        <a href="#" class="btn-delete icon-close"></a>
-                    </div>
-
-                    <div class="order-line__product">
-                        <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
-                                                                         alt=""></a>
-                        <div class="order-line__product-info">
-                            <a href="#" class="order-line__product-name">Штабелер Складская техника B 10.30-EX</a>
-                            <div class="order-line__product-article">Артикул: 08854-20.000.00</div>
-                        </div>
-                        <div class="order-line__product-price">64 990 тенге</div>
-
-                        <div class="amount">
-                            <span class="down"></span>
-                            <input type="text" value="1"/>
-                            <span class="up"></span>
-                        </div>
-
-                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
-
-                        <a href="#" class="add-favorites"></a>
-
-                        <a href="#" class="btn-delete icon-close"></a>
-                    </div>
-
-
-                    <div class="contacts-order">
-                        <h2>Контактные данные</h2>
-
-                        <form method="post" class="contacts-order-form">
-                            <div class="col-block">
-                                <div class="input-box">
-                                    <label for="inputId1" class="input-box__title">Ваше имя</label>
-                                    <input type="text" placeholder="Введите имя" id="inputId1">
-                                </div>
-                                <div class="input-box">
-                                    <label for="inputId2" class="input-box__title">Ваш телефон*</label>
-                                    <input type="text" placeholder="Введите телефон" id="inputId2">
-                                </div>
-                                <div class="input-box">
-                                    <label for="inputId3" class="input-box__title">Ваш e-mail</label>
-                                    <input type="text" placeholder="Введите e-mail" id="inputId3">
-                                </div>
-                            </div>
-
-                            <div class="col-block col-block-right">
-                                <div class="authorization-text">
-                                    <p>Авторизуйтесь на сайте, и мы сохраним всю информацию по заказу и автоматически
-                                        заполним ваши контактные данные.</p>
+                        <div class="cabinet-box__body">
+                            <div class="cabinet-info-company">
+                                <div class="cabinet-info-company__box">
+                                    <strong>ТОО "Юридическая фирма BOND STONE"</strong>
+                                    <span>РНН 600300125196</span>
                                 </div>
 
-                                <input type="submit" class="subscribe-field__button btn btn--inline"
-                                       value="Войти на сайт" required>
-                            </div>
-                        </form>
+                                <div class="cabinet-info-company__box">
+                                    <span>Адрес:</span>
+                                    <p>010000, Казахстан, Нур-Султан, ул. Керей,Жанибек хандар 12А</p>
+                                </div>
 
-                    </div>
+                                <div class="row-block">
 
-                    <div class="method-of-obtaining">
-                        <h2>Способ получения</h2>
-                        <div class="tabs-wrapper">
-                            <ul class="tabs-title">
-                                <li class="tabs-title__item active"><a href="javascript:;">Доставка</a></li>
-                                <li class="tabs-title__item"><a href="javascript:;">Самовывоз</a></li>
-                            </ul>
-                            <div class="tabs__content active">
-                                <form method="post" class="contacts-order-form method-of-obtaining-form">
-                                    <div class="col-block">
-                                        <div class="input-box">
-                                            <label for="select1" class="input-box__title">Ваш город*</label>
-                                            <select name="select" class="select-input-box" id="select1">
-                                                <option value="Выберите город">Выберите город</option>
-                                                <option value="Выберите город">Москва</option>
-                                                <option value="Выберите город">Выберите город</option>
-                                                <option value="Выберите город">Выберите город</option>
-                                            </select>
-                                        </div>
+                                    <div class="cabinet-info-company__box">
+                                        <span>Способ оплаты:</span>
+                                        <p>KZ89826A1KZTD2004583</p>
                                     </div>
 
-                                    <div class="row-block">
-                                        <div class="input-box input-box-average">
-                                            <label for="inputId4" class="input-box__title">Улица*</label>
-                                            <input type="text" placeholder="Введите название улицы" id="inputId4">
-                                        </div>
-                                        <div class="input-box input-box-min">
-                                            <label for="inputId5" class="input-box__title">Дом*</label>
-                                            <input type="text" placeholder="Дом" id="inputId5">
-                                        </div>
-                                        <div class="input-box input-box-min">
-                                            <label for="inputId6" class="input-box__title">Корпус</label>
-                                            <input type="text" placeholder="Кп" id="inputId6">
-                                        </div>
-                                        <div class="input-box input-box-min">
-                                            <label for="inputId7" class="input-box__title">Кв/офис</label>
-                                            <input type="text" placeholder="Кв" id="inputId7">
-                                        </div>
+                                    <div class="cabinet-info-company__box">
+                                        <span>БИН:</span>
+                                        <p>БИН 020140007102
+                                        </p>
                                     </div>
-                                </form>
 
-                                <div class="method-delivery">
-                                    <h3>Способ доставки</h3>
+                                    <div class="cabinet-info-company__box">
+                                        <span>Банк:</span>
+                                        <p>АО АТФ Банк г. Алматы</p>
+                                    </div>
 
-                                    <label class="checkbox-label">
-                                        <span class="delivery-icon"><img src="assets/img/delivery1.png" alt=""></span>
-                                        <span class="delivery-name">Post Express</span>
-                                        <span class="delivery-term">2-3 дня</span>
-                                        <span class="delivery-price">990 тенге </span>
-                                        <input type="radio" class="input-check" name="radio" checked>
-                                        <span class="icon-checked"><img src="assets/img/svg/availability.svg"
-                                                                        alt=""></span>
-                                    </label>
-
-                                    <label class="checkbox-label">
-                                        <span class="delivery-icon"><img src="assets/img/delivery2.png" alt=""></span>
-                                        <span class="delivery-name">Деловые линии</span>
-                                        <span class="delivery-term">2-3 дня</span>
-                                        <span class="delivery-price">990 тенге </span>
-                                        <input type="radio" class="input-check" name="radio">
-                                        <span class="icon-checked"><img src="assets/img/svg/availability.svg"
-                                                                        alt=""></span>
-                                    </label>
+                                    <div class="cabinet-info-company__box">
+                                        <span>БИК:</span>
+                                        <p>БИК ALMNKZKA</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="tabs__content">
-                                123
                             </div>
 
                         </div>
-
                     </div>
 
-                    <div class="method-payment">
-                        <h2>Способ оплаты</h2>
+                    <div class="cabinet-box">
+                        <div class="cabinet-box__line">
+                            <h3 class="cabinet-box__title">Последние заказы</h3>
 
+                            <a href="#" class="links-edit-cabinet">Все заказы</a>
+                        </div>
 
-                        <form method="post" class="contacts-order-form method-payment-form">
-                            <label class="checkbox-label checkbox-payment">
-                                <span class="delivery-icon"><img src="assets/img/svg/bank.svg" alt=""></span>
-                                <span class="checkbox-label-content">
-                            <span class="delivery-name">Безналичный расчет</span>
-                            <span class="delivery-term">Счет будет выставлен в течение часа после оформления заказа</span>
-                                </span>
-                                <input type="radio" class="input-check" name="radio-pay" checked>
-                                <span class="icon-checked"><img src="assets/img/svg/availability.svg" alt=""></span>
-                            </label>
+                        <div class="cabinet-box__body">
+                            <div class="last-order-box">
+                                <div class="last-order-box__left">
+                                    <div class="last-order-box__title">Заказ от 27 апреля 2019</div>
+                                    <div class="last-order-box__number">№ 31795116-0005</div>
 
-                                <div class="input-box">
-                                    <label for="inputId8" class="input-box__title">Комментарий к заказу</label>
-                                    <textarea name="inputId8" id="inputId8" cols="30" rows="10" class="input-box__textarea" placeholder="Введите вопрос или сообщение"></textarea>
+                                    <div class="last-order-box__info">
+                                        <p>21.09.2020</p>
+                                        <p>12:00</p>
+                                        <p>Доставка ТК</p>
+                                    </div>
                                 </div>
-                        </form>
+                                <div class="last-order-box__right">
+                                    <div class="last-order-box__sum">64 990 тенге</div>
+                                    <div class="last-order-box__status">Оплачен, счет #3424</div>
+                                    <a href="#" class="links-red links-details">Детали заказа</a>
+                                </div>
+                            </div>
+
+                            <div class="last-order-box">
+                                <div class="last-order-box__left">
+                                    <div class="last-order-box__title">Заказ от 27 апреля 2019</div>
+                                    <div class="last-order-box__number">№ 31795116-0005</div>
+
+                                    <div class="last-order-box__info">
+                                        <p>21.09.2020</p>
+                                        <p>12:00</p>
+                                        <p>Доставка ТК</p>
+                                    </div>
+                                </div>
+                                <div class="last-order-box__right">
+                                    <div class="last-order-box__sum">64 990 тенге</div>
+                                    <div class="last-order-box__status">Оплачен, счет #3424</div>
+                                    <a href="#" class="links-red links-details">Детали заказа</a>
+                                </div>
+                            </div>
+
+                            <div class="last-order-box">
+                                <div class="last-order-box__left">
+                                    <div class="last-order-box__title">Заказ от 27 апреля 2019</div>
+                                    <div class="last-order-box__number">№ 31795116-0005</div>
+
+                                    <div class="last-order-box__info">
+                                        <p>21.09.2020</p>
+                                        <p>12:00</p>
+                                        <p>Доставка ТК</p>
+                                    </div>
+                                </div>
+                                <div class="last-order-box__right">
+                                    <div class="last-order-box__sum">64 990 тенге</div>
+                                    <div class="last-order-box__status">Оплачен, счет #3424</div>
+                                    <a href="#" class="links-red links-details">Детали заказа</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cabinet-box cabinet-box-favorites">
+                        <div class="cabinet-box__line">
+                            <h3 class="cabinet-box__title">Избранное</h3>
+
+                            <a href="#" class="links-edit-cabinet val-favorites-order"><span class="add-favorites"></span>2 товара в избранном</a>
+                        </div>
+
+                        <div class="cabinet-box__body">
+                            <div class="row collapse expanded">
+                                <div class="small-6 medium-4 large-4 column">
+                                    <div class="anons-product-wrapper">
+                                        <div class="anons-product">
+                                            <a href="" class="anons-product__img">
+                                                <img src="assets/img/product-anons-1.png" alt="">
+                                            </a>
+                                            <div class="anons-product__title">
+                                                Тележка гидравлическая <br>MLS-2500
+                                            </div>
+                                            <div class="anons-product__availability">
+                                                <img src="assets/img/svg/availability.svg" alt="">
+                                                В наличии
+                                            </div>
+                                            <div class="anons-product__price">
+                                                <span class="anons-product__price-text">19 990 тенге</span>
+                                                <a href="javascript:;" class="add-favorites add"></a>
+                                            </div>
+                                            <div class="anons-product__hide">
+                                                <div class="favorites-product">
+                                                    <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                                    <a href="javascript:;" class="favorites-product__item favorites-product__item--clean">Удалить из избранных товаров</a>
+                                                </div>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-6 medium-4 large-4 column">
+                                    <div class="anons-product-wrapper">
+                                        <div class="anons-product">
+                                            <div class="anons-product__status">
+                                                <span>Акция</span>
+                                            </div>
+                                            <a href="" class="anons-product__img">
+                                                <img src="assets/img/product-anons-2.png" alt="">
+                                            </a>
+                                            <div class="anons-product__title">
+                                                Штабелер Складская техника <br>B 10.30-EX
+                                            </div>
+                                            <div class="anons-product__availability">
+                                                <img src="assets/img/svg/availability.svg" alt="">
+                                                В наличии
+                                            </div>
+                                            <div class="anons-product__price anons-product__price--sale">
+                                                <span class="anons-product__price-text">64 990 тенге <span>90 990 тенге</span></span>
+                                                <a href="javascript:;" class="add-favorites add"></a>
+                                            </div>
+                                            <div class="anons-product__hide">
+                                                <div class="favorites-product">
+                                                    <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                                    <a href="javascript:;" class="favorites-product__item favorites-product__item--clean">Удалить из избранных товаров</a>
+                                                </div>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-6 medium-4 large-4 column">
+                                    <div class="anons-product-wrapper">
+                                        <div class="anons-product">
+                                            <a href="" class="anons-product__img">
+                                                <img src="assets/img/product-anons-1.png" alt="">
+                                            </a>
+                                            <div class="anons-product__title">
+                                                Тележка гидравлическая <br>MLS-2500
+                                            </div>
+                                            <div class="anons-product__availability">
+                                                <img src="assets/img/svg/availability.svg" alt="">
+                                                В наличии
+                                            </div>
+                                            <div class="anons-product__price">
+                                                <span class="anons-product__price-text">19 990 тенге</span>
+                                                <a href="javascript:;" class="add-favorites add"></a>
+                                            </div>
+                                            <div class="anons-product__hide">
+                                                <div class="favorites-product">
+                                                    <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                                    <a href="javascript:;" class="favorites-product__item favorites-product__item--clean">Удалить из избранных товаров</a>
+                                                </div>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="small-6 medium-4 large-4 column hide-for-medium">
+                                    <div class="anons-product-wrapper">
+                                        <div class="anons-product">
+                                            <div class="anons-product__status">
+                                                <span>Акция</span>
+                                            </div>
+                                            <a href="" class="anons-product__img">
+                                                <img src="assets/img/product-anons-2.png" alt="">
+                                            </a>
+                                            <div class="anons-product__title">
+                                                Штабелер Складская техника <br>B 10.30-EX
+                                            </div>
+                                            <div class="anons-product__availability">
+                                                <img src="assets/img/svg/availability.svg" alt="">
+                                                В наличии
+                                            </div>
+                                            <div class="anons-product__price anons-product__price--sale">
+                                                <span class="anons-product__price-text">64 990 тенге <span>90 990 тенге</span></span>
+                                                <a href="javascript:;" class="add-favorites add"></a>
+                                            </div>
+                                            <div class="anons-product__hide">
+                                                <div class="favorites-product">
+                                                    <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                                    <a href="javascript:;" class="favorites-product__item favorites-product__item--clean">Удалить из избранных товаров</a>
+                                                </div>
+                                                <a href="" class="btn">В корзину</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="outer-content__column outer-content__column--right order-content__column--right">
-                    <div class="price-box">
-                        <h2 class="price-box__title">Итого:</h2>
-                        <div class="price-box__body">
-                            <div class="price-box__head">
-                                <p>Сумма заказа:</p>
-                                <div class="price-box__count">129 980 тенге</div>
-                            </div>
-                            <div class="price-box__head">
-                                <p>Скидка по промокоду: </p>
-                                <div class="price-box__count">0 тенге</div>
-                            </div>
-                            <div class="price-box__head">
-                                <p>Стоимость доставки: </p>
-                                <div class="price-box__count">249 тенге</div>
-                            </div>
-
-                        </div>
-                        <div class="price-box__total">
-                            <p>Итого: </p>
-                            <div class="price-box__count">129 980 тенге</div>
-                        </div>
-                        <a href="" class="btn btn-order">оформить заказ</a>
-                        <div class="price-box__foot">
-                            <div class="privacy-policy">
-                                <i class="icon-shield"></i>
-                                <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a href="#">политикой конфиденциальности</a> сайта.</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
         <footer class="footer-box">
             <div class="subscribe-block">

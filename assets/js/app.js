@@ -278,13 +278,14 @@ $(document).ready(function(){
             $this.parent('.filter-box__button').siblings('.filter-box__sorts').slideDown();
         }
     });
-	
-	$(".my-rating").starRating({
-        starSize: 25,
-        callback: function(currentRating, $el){
-            // make a server call here
-        }
-    });
+
+    // подключить только на нужной странице
+	// $(".my-rating").starRating({
+    //     starSize: 25,
+    //     callback: function(currentRating, $el){
+    //         // make a server call here
+    //     }
+    // });
 
 
     var header_fixed = $('.header-wrapper'),
@@ -358,4 +359,8 @@ $('.up').click(function () {
     $input.val(parseInt($input.val()) + 1);
     $input.change();
     return false;
+});
+
+$('.btn-cabinet-menu').click(function () {
+   $(this).parents('.cabinet-left-column').toggleClass('open').find('.cabinet-menu').slideToggle();
 });
