@@ -2,16 +2,16 @@ $(document).foundation();
 
 $(document).ready(function(){
 	
-	enquire.register("screen and (max-width:1440px)", {
-
-		match : function() {
-			$('#desktop-appendPrice .price-box').appendTo('#device-appendPrice');
-		},
-		unmatch : function() {
-			$('#device-appendPrice .price-box').appendTo('#desktop-appendPrice');
-		}
-
-	});
+	// enquire.register("screen and (max-width:1440px)", {
+    //
+	// 	match : function() {
+	// 		$('#desktop-appendPrice .price-box').appendTo('#device-appendPrice');
+	// 	},
+	// 	unmatch : function() {
+	// 		$('#device-appendPrice .price-box').appendTo('#desktop-appendPrice');
+	// 	}
+    //
+	// });
 	
     
     $(document).mouseup(function (e){
@@ -285,11 +285,7 @@ $(document).ready(function(){
             // make a server call here
         }
     });
-	
-	
-	
-	
-	
+
 
     var header_fixed = $('.header-wrapper'),
         scrollIn = 0;
@@ -347,3 +343,19 @@ $(document).ready(function(){
 	});
 });
 
+
+// main js
+$('.down').click(function () {
+    var $input = $(this).parent().find('input');
+    var count = parseInt($input.val()) - 1;
+    count = count < 1 ? 1 : count;
+    $input.val(count);
+    $input.change();
+    return false;
+});
+$('.up').click(function () {
+    var $input = $(this).parent().find('input');
+    $input.val(parseInt($input.val()) + 1);
+    $input.change();
+    return false;
+});
