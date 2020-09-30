@@ -302,7 +302,7 @@
                                 <div class="price-box__report">ЦЕНА ПО ЗАПРОСУ</div>
                             </div>
                             <div class="price-box__body">
-                                <a href="" class="btn">В корзину</a>
+                                <a href="#basket-modal" class="btn open_modal">В корзину</a>
                                 <a href="#" class="btn btn-default white">Купить в 1 клик</a>
                             </div>
                             <div class="price-box__foot">
@@ -675,7 +675,7 @@
             <div class="modal__close icon-close"></div>
         </div>
 
-        <div class="modal-body">
+        <div class="modal-body modal-body-call">
             <h2>Заказать звонок</h2>
             <div class="description-modal">Заполните форму и наши менеджеры свяжутся с вами в ближайшее время для
                 уточнения деталей заказа.
@@ -694,15 +694,72 @@
 
                 <div class="privacy-policy">
                     <i class="icon-shield"></i>
-                    <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a href="#">политикой конфиденциальности</a> сайта.</span>
+                    <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a
+                            href="#">политикой конфиденциальности</a> сайта.</span>
                 </div>
 
                 <input type="submit" class="subscribe-field__button btn btn--inline"
                        value="Оставить заявку" required>
             </form>
         </div>
+    </div>
+</div>
 
+<div class="modal__div" id="basket-modal">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
 
+            <div class="line-title-modal">
+                <h2>Корзина</h2>
+                <span class="product-title__availability">(2 товара)</span>
+            </div>
+        </div>
+
+        <div class="modal-body modal-body-basket">
+            <div class="order-line__product">
+                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
+                                                                 alt=""></a>
+                <div class="order-line__product-info">
+                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                        <div class="amount">
+                            <span class="down"></span>
+                            <input type="text" value="1"/>
+                            <span class="up"></span>
+                        </div>
+                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                </div>
+
+                <a href="#" class="btn-delete icon-close"></a>
+            </div>
+
+            <div class="order-line__product">
+                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
+                                                                 alt=""></a>
+                <div class="order-line__product-info">
+                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                    <div class="amount">
+                        <span class="down"></span>
+                        <input type="text" value="1"/>
+                        <span class="up"></span>
+                    </div>
+                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                </div>
+
+                <a href="#" class="btn-delete icon-close"></a>
+            </div>
+
+            <div class="order-line__product-total">
+                <p>Общая стоимость:</p>
+                <div class="the-sum-total">129 980 тенге </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <a href="order.html" class="btn">Оформить заказ</a>
+        </div>
     </div>
 </div>
 <div class="overlay"></div><!-- Пoдлoжкa -->
