@@ -1,7 +1,8 @@
 $(document).foundation();
 
 $(document).ready(function(){
-	
+
+    // добавить на нужной странице
 	// enquire.register("screen and (max-width:1440px)", {
     //
 	// 	match : function() {
@@ -379,6 +380,11 @@ $(document).ready(function () {
 
     open_modal.click(function (event) {
         event.preventDefault();
+        modal.css('display', 'none').animate({
+            opacity: 0,
+            top: '45%'
+        }, 200);
+
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function () {

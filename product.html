@@ -139,8 +139,8 @@
                             </div>
                         </div>
                         <div class="header-box__auth">
-                            <a href="#">Регистрация </a>
-                            <a href="#"> Войти</a>
+                            <a href="#modal-registration" class="open_modal">Регистрация </a>
+                            <a href="#modal-edit" class="open_modal"> Войти</a>
                         </div>
                         <div class="header-box__links">
                             <a href="#" class="link link--circle">
@@ -288,7 +288,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="outer-content__column outer-content__column--right">
+                <div class="outer-content__column outer-content__column--right outer-content__column--right-product">
                     <div id="desktop-appendPrice">
                         <div class="price-box">
                             <div class="price-box__head">
@@ -303,7 +303,7 @@
                             </div>
                             <div class="price-box__body">
                                 <a href="#basket-modal" class="btn open_modal">В корзину</a>
-                                <a href="#" class="btn btn-default white">Купить в 1 клик</a>
+                                <a href="#one-click-modal" class="btn btn-default white open_modal">Купить в 1 клик</a>
                             </div>
                             <div class="price-box__foot">
                                 <div class="favorites-box">
@@ -666,62 +666,62 @@
             </div>
         </footer>
     </div>
-</div>
 
-
-<div class="modal__div" id="modal-call">
-    <div class="modal__wrapper">
-        <div class="modal-head">
-            <div class="modal__close icon-close"></div>
-        </div>
-
-        <div class="modal-body modal-body-call">
-            <h2>Заказать звонок</h2>
-            <div class="description-modal">Заполните форму и наши менеджеры свяжутся с вами в ближайшее время для
-                уточнения деталей заказа.
+    <div class="modal__div" id="modal-call">
+        <div class="modal__wrapper">
+            <div class="modal-head">
+                <div class="modal__close icon-close"></div>
             </div>
 
-            <form method="post" class="form-modal">
-                <div class="input-box">
-                    <input type="text" placeholder="Введите имя" id="inputId1">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Введите телефон" id="inputId2">
-                </div>
-                <div class="input-box">
-                    <input type="text" placeholder="Введите e-mail" id="inputId3">
-                </div>
+            <div class="modal-body modal-body-call">
+                <h2>Заказать звонок</h2>
 
-                <div class="privacy-policy">
-                    <i class="icon-shield"></i>
-                    <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a
-                            href="#">политикой конфиденциальности</a> сайта.</span>
-                </div>
 
-                <input type="submit" class="subscribe-field__button btn btn--inline"
-                       value="Оставить заявку" required>
-            </form>
+                <form method="post" class="form-modal">
+                    <div class="description-modal">Заполните форму и наши менеджеры свяжутся с вами в ближайшее время
+                        для
+                        уточнения деталей заказа.
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите имя" id="inputId1">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите телефон" id="inputId2">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите e-mail" id="inputId3">
+                    </div>
+
+                    <div class="privacy-policy">
+                        <i class="icon-shield"></i>
+                        <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a
+                                href="#">политикой конфиденциальности</a> сайта.</span>
+                    </div>
+
+                    <input type="submit" class="subscribe-field__button btn btn--inline"
+                           value="Оставить заявку" required>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="modal__div" id="basket-modal">
-    <div class="modal__wrapper">
-        <div class="modal-head">
-            <div class="modal__close icon-close"></div>
+    <div class="modal__div" id="basket-modal">
+        <div class="modal__wrapper">
+            <div class="modal-head">
+                <div class="modal__close icon-close"></div>
 
-            <div class="line-title-modal">
-                <h2>Корзина</h2>
-                <span class="product-title__availability">(2 товара)</span>
+                <div class="line-title-modal">
+                    <h2>Корзина</h2>
+                    <span class="product-title__availability">(2 товара)</span>
+                </div>
             </div>
-        </div>
 
-        <div class="modal-body modal-body-basket">
-            <div class="order-line__product">
-                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
-                                                                 alt=""></a>
-                <div class="order-line__product-info">
-                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+            <div class="modal-body modal-body-basket">
+                <div class="order-line__product">
+                    <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
+                                                                     alt=""></a>
+                    <div class="order-line__product-info">
+                        <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
                         <div class="amount">
                             <span class="down"></span>
                             <input type="text" value="1"/>
@@ -729,40 +729,247 @@
                         </div>
                         <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
 
-                </div>
-
-                <a href="#" class="btn-delete icon-close"></a>
-            </div>
-
-            <div class="order-line__product">
-                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
-                                                                 alt=""></a>
-                <div class="order-line__product-info">
-                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
-                    <div class="amount">
-                        <span class="down"></span>
-                        <input type="text" value="1"/>
-                        <span class="up"></span>
                     </div>
-                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
 
+                    <a href="#" class="btn-delete icon-close"></a>
                 </div>
 
-                <a href="#" class="btn-delete icon-close"></a>
+                <div class="order-line__product">
+                    <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
+                                                                     alt=""></a>
+                    <div class="order-line__product-info">
+                        <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                        <div class="amount">
+                            <span class="down"></span>
+                            <input type="text" value="1"/>
+                            <span class="up"></span>
+                        </div>
+                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                    </div>
+
+                    <a href="#" class="btn-delete icon-close"></a>
+                </div>
+
+                <div class="order-line__product-total">
+                    <p>Общая стоимость:</p>
+                    <div class="the-sum-total">129 980 тенге</div>
+                </div>
             </div>
 
-            <div class="order-line__product-total">
-                <p>Общая стоимость:</p>
-                <div class="the-sum-total">129 980 тенге </div>
+            <div class="modal-footer">
+                <a href="order.html" class="btn">Оформить заказ</a>
             </div>
-        </div>
-
-        <div class="modal-footer">
-            <a href="order.html" class="btn">Оформить заказ</a>
         </div>
     </div>
+
+    <div class="modal__div modal-order" id="one-click-modal">
+        <div class="modal__wrapper">
+            <div class="modal-head">
+                <div class="modal__close icon-close"></div>
+
+                <div class="line-title-modal">
+                    <h2>Купить в 1 клик</h2>
+                </div>
+            </div>
+
+            <div class="modal-body modal-body-basket">
+                <div class="order-line__product">
+                    <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
+                                                                     alt=""></a>
+                    <div class="order-line__product-info">
+                        <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                        <div class="amount">
+                            <span class="down"></span>
+                            <input type="text" value="1"/>
+                            <span class="up"></span>
+                        </div>
+                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                    </div>
+
+                    <a href="#" class="btn-delete icon-close"></a>
+                </div>
+
+                <div class="order-line__product-total">
+                    <p>Общая стоимость:</p>
+                    <div class="the-sum-total">129 980 тенге</div>
+                </div>
+
+                <form method="post" class="form-modal form-modal-order">
+
+                    <div class="description-modal">Заполните форму и наши менеджеры свяжутся с вами в ближайшее время
+                        для
+                        уточнения деталей заказа.
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите имя" id="inputId4">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите телефон" id="inputId5">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Введите e-mail" id="inputId6">
+                    </div>
+
+                    <div class="privacy-policy">
+                        <i class="icon-shield"></i>
+                        <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a
+                                href="#">политикой конфиденциальности</a> сайта.</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <input type="submit" class="subscribe-field__button btn btn--inline"
+                       value="Оставить заявку" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__div modal-edit" id="modal-edit">
+        <div class="modal__wrapper">
+            <div class="modal-head">
+                <div class="modal__close icon-close"></div>
+            </div>
+
+            <div class="modal-body modal-body-edit">
+                <h2>Войти</h2>
+
+
+                <form method="post" class="form-modal">
+
+                    <div class="input-box">
+                        <label for="inputId4" class="input-box__title">Телефон</label>
+                        <input type="text" placeholder="Введите телефон" id="inputId7">
+                    </div>
+                    <div class="input-box">
+                        <label for="inputId8" class="input-box__title">Пароль <a href="#"
+                                                                                 class="input-box__title-links">Забыли
+                            пароль?</a></label>
+                        <input type="text" placeholder="Введите пароль" id="inputId8">
+                    </div>
+
+                    <div class="button-group">
+                        <input type="submit" class="subscribe-field__button btn btn--inline"
+                               value="Войти" required>
+                        <a href="#modal-registration" class="links open_modal">зарегистрироваться</a>
+                    </div>
+
+                    <div class="social-edit">
+                        <p>Или войдите с помощью соц.сетей:</p>
+                        <ul class="soc-box">
+                            <li><a href="#" class="soc-box__item"><i class="icon-vk"></i></a></li>
+                            <li><a href="#" class="soc-box__item"><i class="icon-fb"></i></a></li>
+                            <li><a href="#" class="soc-box__item"><i class="icon-insta"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__div modal-edit modal-registration" id="modal-registration">
+
+
+        <div class="modal__wrapper">
+
+            <div class="modal-wrapper-overlay">
+                <img src="assets/img/modal-bg.jpeg" alt="">
+                <div class="modal-checkbox">
+                    <p>БУДЬТЕ В КУРСЕ ПОСЛЕДНИХ АКЦИЙ, НОВИНОК И РАСПРОДАЖ</p>
+                    <div class="label-box">
+                        <input type="checkbox" id="check1" checked name="check1"/>
+                        <label for="check1">Я хочу получать рассылку</label>
+                    </div>
+                    <div class="label-box">
+                        <input type="checkbox" id="check2" checked name="check2"/>
+                        <label for="check2">Я хочу быть в курсе новостей</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__wrapper-content">
+
+                <div class="modal-head">
+                    <div class="modal__close icon-close"></div>
+                </div>
+
+                <div class="modal-body modal-body-edit modal-body-registration">
+                    <h2>ЗАРЕГИСТРИРОВАТЬСЯ</h2>
+
+
+                    <form method="post" class="form-modal">
+
+                        <div class="tabs-wrapper">
+                            <ul class="tabs-title">
+                                <li class="tabs-title__item active"><a href="javascript:;">Частное лицо</a></li>
+                                <li class="tabs-title__item"><a href="javascript:;">Юр.лицо или ИП</a></li>
+                            </ul>
+                            <div class="tabs__content active">
+                                <div class="input-box">
+                                    <label for="inputId9" class="input-box__title">Ваше имя</label>
+                                    <input type="text" placeholder="Введите имя" id="inputId9">
+                                </div>
+                                <div class="input-box">
+                                    <label for="inputId10" class="input-box__title">Ваш телефон</label>
+                                    <input type="text" placeholder="Введите телефон" id="inputId10">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="inputId11" class="input-box__title">Электронная почта</label>
+                                    <input type="text" placeholder="Введите эл.почту" id="inputId11">
+                                </div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="input-box">
+                                    <label for="inputId12" class="input-box__title">Наименование организации</label>
+                                    <input type="text" placeholder="Введите название " id="inputId12">
+                                </div>
+                                <div class="input-box">
+                                    <label for="inputId13" class="input-box__title">Ваш телефон</label>
+                                    <input type="text" placeholder="Введите телефон" id="inputId13">
+                                </div>
+
+                                <div class="input-box">
+                                    <label for="inputId14" class="input-box__title">Электронная почта</label>
+                                    <input type="text" placeholder="Введите эл.почту" id="inputId14">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-checkbox modal-checkbox-mobile">
+                            <div class="label-box">
+                                <input type="checkbox" id="check1" checked name="check1"/>
+                                <label for="check1">Я хочу получать рассылку</label>
+                            </div>
+                            <div class="label-box">
+                                <input type="checkbox" id="check2" checked name="check2"/>
+                                <label for="check2">Я хочу быть в курсе новостей</label>
+                            </div>
+                        </div>
+
+                        <div class="button-group">
+                            <input type="submit" class="subscribe-field__button btn btn--inline"
+                                   value="Зарегистрироваться" required>
+                            <a href="#modal-edit" class="links open_modal">Войти</a>
+                        </div>
+
+                        <div class="privacy-policy">
+                            <i class="icon-shield"></i>
+                            <span>Нажимая на кнопку оформить заказ я соглашаюсь<br> с <a
+                                    href="#">политикой конфиденциальности</a> сайта.</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay"></div><!-- Пoдлoжкa -->
 </div>
-<div class="overlay"></div><!-- Пoдлoжкa -->
+
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/foundation.js"></script>
