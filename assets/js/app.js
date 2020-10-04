@@ -143,15 +143,42 @@ $(document).ready(function(){
 		appendDots: $('.slider-controll__dots--history'),
     });
     
-    var carousel = $('.partners-slider');
-	carousel.slick({
+    $('.partners-slider1').slick({
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
-        prevArrow: $('.arrow-slider--partners .arrow-slider__item--prev'),
-        nextArrow: $('.arrow-slider--partners .arrow-slider__item--next'),
+        prevArrow: $('.arrow-slider--partners1 .arrow-slider__item--prev'),
+        nextArrow: $('.arrow-slider--partners1 .arrow-slider__item--next'),
 		dots: true,
-		appendDots: $('.slider-controll__dots--partners'),
+		appendDots: $('.slider-controll__dots--partners1'),
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 4,
+            }},{
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+            }},{
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }}
+        ]
+    });
+
+    $('.partners-slider2').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow-slider--partners2 .arrow-slider__item--prev'),
+        nextArrow: $('.arrow-slider--partners2 .arrow-slider__item--next'),
+        dots: true,
+        appendDots: $('.slider-controll__dots--partners2'),
         responsive: [{
             breakpoint: 1024,
             settings: {
@@ -172,8 +199,7 @@ $(document).ready(function(){
         ]
     });
     
-    var carousel = $('.personal-slider');
-	carousel.slick({
+    $('.personal-slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -201,11 +227,11 @@ $(document).ready(function(){
         ]
     });
 	
-	$('.footer-masonry').masonry({
-		itemSelector: '.footer-masonry__item',
-		columnWidth: '.footer-masonry__sizer',
-		percentPosition: true
-	});
+	// $('.footer-masonry').masonry({
+	// 	itemSelector: '.footer-masonry__item',
+	// 	columnWidth: '.footer-masonry__sizer',
+	// 	percentPosition: true
+	// });
     
     $('ul.tabs-title').on('click', 'li:not(.active)', function() {
         $(this)
