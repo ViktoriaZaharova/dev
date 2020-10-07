@@ -11829,6 +11829,33 @@ figure figcaption {
         max-width: 54%;
     }
 
+    .information-box--numbers {
+        padding: 60px 40px;
+    }
+
+    .information-box--numbers .information-column {
+        max-width: 261px;
+    }
+
+    .information-box--numbers .information-item {
+        margin: 0 0 35px;
+    }
+
+    .information-box--numbers .information-column .btn {
+        margin: 57px 0 0;
+    }
+
+    .information-item__col:nth-child(3) .information-item, .information-item__col:last-child .information-item {
+        margin: 0;
+    }
+
+    .slider-controll + h2, .slider-controll + .h2 {
+        margin-top: 60px;
+    }
+
+    .page-wrapper h1, .page-wrapper .h1, .page-wrapper h2, .page-wrapper .h2, .page-wrapper h3, .page-wrapper .h3, .page-wrapper h4, .page-wrapper .h4, .page-wrapper h5, .page-wrapper .h5, .page-wrapper h6, .page-wrapper .h6 {
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 650px) {
     .order-content__column--right {
@@ -11837,7 +11864,6 @@ figure figcaption {
         flex: auto;
         padding: 0 20px 30px !important;
         max-width: none;
-
     }
 
     .cabinet--order .order-content__column--right {
