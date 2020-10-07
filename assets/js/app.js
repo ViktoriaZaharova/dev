@@ -56,9 +56,7 @@ $(document).ready(function(){
 	$('.anons-product-wrapper').matchHeight();
 	$('.catalog-menu-wrapper').matchHeight();
     
-    
-    
-    
+
     var productSlider = $('.product-slider');
 	productSlider.slick({
         infinite: true,
@@ -98,12 +96,7 @@ $(document).ready(function(){
 			}
 		}]
     });
-    
-    
-    
-    
-    
-    
+
     
     var headerSlider = $('.header-slider');
 	headerSlider.slick({
