@@ -980,6 +980,15 @@
 <script src="assets/js/enquire.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/fancybox.js"></script>
+
+<script>
+    $(".my-rating").starRating({
+        starSize: 25,
+        callback: function(currentRating, $el){
+            // make a server call here
+        }
+    });
+</script>
 </body>
 
 
