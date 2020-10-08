@@ -79,20 +79,17 @@ $(document).ready(function(){
         focusOnSelect: true,
         asNavFor: '.product-slider',
 		responsive: [{
-			breakpoint: 1441,
+			breakpoint: 750,
 			settings: {
 				verticalSwiping: false,
 				vertical: false,
 			}
 			},{
-			breakpoint: 600,
+			breakpoint: 700,
 			settings: {
-				
-			}
-			},{
-			breakpoint: 480,
-			settings: {
-				
+                variableWidth: true,
+                verticalSwiping: false,
+                vertical: false,
 			}
 		}]
     });
@@ -430,3 +427,11 @@ $(document).ready(function () {
     });
 });
 //end
+
+if ($(".outer-content-product .product-content").length){
+    $('.outer-content-product .product-content').clone().appendTo('#device-appendContent');
+}
+
+if ($("#desktop-appendPrice .price-box").length){
+    $('#desktop-appendPrice .price-box').clone().appendTo('.device-appendPrice');
+}
