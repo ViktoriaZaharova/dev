@@ -435,3 +435,24 @@ if ($(".outer-content-product .product-content").length){
 if ($("#desktop-appendPrice .price-box").length){
     $('#desktop-appendPrice .price-box').clone().appendTo('.device-appendPrice');
 }
+
+$(".catalog-view__item").click(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+    $('.catalog-view__item.active').removeClass('active'); // 1
+    $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});
