@@ -4330,16 +4330,6 @@ a:hover {
     position: relative;
 }
 
-.page-column .logo-box:after {
-    content: '';
-    position: absolute;
-    right: -3px;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: #fff;
-    z-index: 2;
-}
 
 .page-column--left {
     -webkit-box-ordinal-group: 2;
@@ -4918,7 +4908,7 @@ a:hover {
 }
 
 .footer-copyright__item {
-    font-size: .875rem;
+    font-size: 14px;
     line-height: 150%;
 }
 
@@ -6582,6 +6572,7 @@ a:hover {
     min-height: 100%;
     background: #fff;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .anons-product-wrapper {
@@ -7309,6 +7300,10 @@ a:hover {
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+
+.information-box--numbers .row {
+    align-items: flex-start;
 }
 
 .information-box__bg {
@@ -9014,6 +9009,8 @@ figure figcaption {
         min-width: inherit;
         max-width: 450px;
     }
+
+
 
     .page-column .logo-box {
         display: none;
@@ -11732,8 +11729,21 @@ figure figcaption {
     .maps-box.outer-content {
         max-height: 460px;
     }
+    .short-text  {
+        padding-right: 0;
+        font-size: 12px;
+        max-width: 922px;
+        width: 100%;
+    }
 
+    .page-content {
+        padding-left: 288px;
+    }
 
+    .page-column {
+        min-width: 288px;
+        max-width: 288px;
+    }
 }
 
 @media (max-width: 1350px) {
@@ -11775,6 +11785,13 @@ figure figcaption {
         flex: 0 0 209px;
         max-width: 209px;
         width: 209px;
+    }
+
+    .cabinet--order .order-content__column--right {
+        min-width: 287px;
+        flex: 0 0 287px;
+        max-width: 287px;
+        width: 287px;
     }
 
     .price-box__count {
@@ -12100,6 +12117,10 @@ figure figcaption {
         max-height: 70px;
         padding: 15px 54.5px;
     }
+
+    .page-content {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 40em) {
@@ -12129,7 +12150,7 @@ figure figcaption {
     }
 
     .cabinet-left-column {
-        padding: 95px 0 0 !important;
+        padding: 105px 0 0 !important;
     }
 
     .cabinet-content__column .product-title {
@@ -12363,9 +12384,9 @@ figure figcaption {
         margin: 0;
     }
 
-    .tabs__content .outer-content {
-        margin: 0 !important;
-    }
+    /*.tabs__content .outer-content {*/
+    /*    margin: 0 !important;*/
+    /*}*/
 
     .content-box {
         padding-top: 0;
@@ -12416,7 +12437,9 @@ figure figcaption {
     }
 
     .short-text {
-        padding: var(--padding30) 40% var(--padding30) 0;
+        padding: var(--padding30) 0;
+        max-width: 580px;
+        font-size: 10px;
     }
 
     .content-box {
@@ -12475,6 +12498,7 @@ figure figcaption {
     .footer-menu__item--title {
         margin-bottom: 20px;
         font-size: 12px;
+        line-height: 150%;
     }
 
     .footer-menu__item {
@@ -12796,13 +12820,15 @@ figure figcaption {
 }
 
 @media (max-width: 650px) {
-    .order-content__column--right {
+    .order-content__column--right, .cabinet--order .order-content__column--right {
         width: 100%;
         min-width: auto;
         flex: auto;
         padding: 0 20px 30px !important;
         max-width: none;
     }
+
+
 
     .cabinet--order .order-content__column--right {
         padding: 30px 20px !important;
@@ -12985,7 +13011,11 @@ figure figcaption {
         background: transparent;
     }
 
-    .header-wrapper--slide .header-box-home .header-box__auth a {
+    .header-box__auth a {
+        color: #364859;
+    }
+
+    .header-wrapper--slide .header-box__auth a, .header-wrapper.slide .header-box__auth a {
         color: #fff;
     }
 
@@ -12993,9 +13023,7 @@ figure figcaption {
         color: #fff;
     }
 
-    .header-box__auth a {
-        color: #364859;
-    }
+
 
     .header-slider__item {
         min-height: auto;
@@ -13167,6 +13195,14 @@ figure figcaption {
         text-transform: uppercase;
         min-height: auto;
     }
+
+    .cabinet-dropdown-wrapper {
+        color: #364859;
+        font-family: 'Avenir Next', sans-serif;
+        font-weight: 500;
+    }
+
+
 }
 
 @media (max-width: 575px) {
@@ -13787,11 +13823,19 @@ figure figcaption {
     .characteristic-box__list p {
         width: 60%;
     }
+
+    .header-box__auth {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 340px) {
     .footer-connection__contact .short-contact__phone {
         font-size: 26px;
+    }
+
+    .cabinet-dropdown-wrapper {
+        font-size: 9px;
     }
 
 }
