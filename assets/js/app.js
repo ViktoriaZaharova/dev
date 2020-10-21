@@ -258,14 +258,15 @@ $(document).ready(function(){
     });
     
     
-    $('.catalog-menu__front').on('click', function(){
-        var $this = $(this);
-        if($this.parent('.catalog-menu-wrapper').hasClass('active')){
-            $('.catalog-menu-wrapper').removeClass('active');
-        } else{
-            $('.catalog-menu-wrapper').removeClass('active');
-            $this.parent('.catalog-menu-wrapper').addClass('active');
-        }
+    $('.catalog-menu-wrapper').on('click', function(){
+        // var $this = $(this);
+        // if($this.parent('.catalog-menu-wrapper').hasClass('active')){
+        //     $('.catalog-menu-wrapper').removeClass('active');
+        // } else{
+        //     $('.catalog-menu-wrapper').removeClass('active');
+        //     $this.parent('.catalog-menu-wrapper').addClass('active');
+        // }
+        $(this).toggleClass('active');
     });
     
     

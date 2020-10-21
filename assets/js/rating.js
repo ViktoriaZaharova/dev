@@ -17,9 +17,9 @@
   var defaults = {
     totalStars: 5,
     useFullStars: false,
-    starShape: '#364859',
+    starShape: '#8B0E0E',
     emptyColor: 'lightgray',
-    hoverColor: '#364859',
+    hoverColor: '#8B0E0E',
     activeColor: '#8B0E0E',
     ratedColor: '#A62525',
     useGradient: true,
