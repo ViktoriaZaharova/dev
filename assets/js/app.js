@@ -457,3 +457,7 @@ $('.go_to').click(function () {
     }
     return false;
 });
+
+$('.header-box__auth').click(function () {
+   $(this).toggleClass('click').find('.cabinet-drop__wrapper').fadeToggle();
+});

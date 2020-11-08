@@ -143,7 +143,7 @@
                             <a href="#modal-edit" class="open_modal"> Войти</a>
                         </div>
                         <div class="header-box__links">
-                            <a href="#" class="link link--circle">
+                            <a href="#modal__favorite" class="link link--circle open_modal">
                                 <i class="icon-bookmark"></i>
                             </a>
                             <a href="#" class="link link--circle">
@@ -346,6 +346,65 @@
 <!--                            </div>-->
                             <div class="price-box__body">
                                 <a href="#basket-modal" class="btn open_modal">В корзину</a>
+                                <div class="modal__div" id="basket-modal">
+                                    <div class="modal__wrapper">
+                                        <div class="modal-head">
+                                            <div class="modal__close icon-close"></div>
+
+                                            <div class="line-title-modal">
+                                                <h2>Корзина</h2>
+                                                <span class="product-title__availability">(2 товара)</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-body modal-body-basket">
+                                            <div class="order-line__product">
+                                                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
+                                                                                                 alt=""></a>
+                                                <div class="order-line__product-info">
+                                                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                                                    <div class="amount">
+                                                        <span class="down"></span>
+                                                        <input type="text" value="1"/>
+                                                        <span class="up"></span>
+                                                    </div>
+                                                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                                                </div>
+
+                                                <a href="#" class="btn-delete icon-close"></a>
+                                            </div>
+
+                                            <div class="order-line__product">
+                                                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
+                                                                                                 alt=""></a>
+                                                <div class="order-line__product-info">
+                                                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                                                    <div class="amount">
+                                                        <span class="down"></span>
+                                                        <input type="text" value="1"/>
+                                                        <span class="up"></span>
+                                                    </div>
+                                                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+
+                                                </div>
+
+                                                <a href="#" class="btn-delete icon-close"></a>
+                                            </div>
+
+                                            <div class="order-line__product-total">
+                                                <p>Общая стоимость:</p>
+                                                <div class="the-sum-total">129 980 тенге</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <a href="order.html" class="btn">Оформить заказ</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                                 <a href="#one-click-modal" class="btn btn-default white open_modal">Купить в 1 клик</a>
                             </div>
                             <div class="price-box__foot">
@@ -869,63 +928,7 @@
         </div>
     </div>
 
-    <div class="modal__div" id="basket-modal">
-        <div class="modal__wrapper">
-            <div class="modal-head">
-                <div class="modal__close icon-close"></div>
 
-                <div class="line-title-modal">
-                    <h2>Корзина</h2>
-                    <span class="product-title__availability">(2 товара)</span>
-                </div>
-            </div>
-
-            <div class="modal-body modal-body-basket">
-                <div class="order-line__product">
-                    <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
-                                                                     alt=""></a>
-                    <div class="order-line__product-info">
-                        <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
-                        <div class="amount">
-                            <span class="down"></span>
-                            <input type="text" value="1"/>
-                            <span class="up"></span>
-                        </div>
-                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
-
-                    </div>
-
-                    <a href="#" class="btn-delete icon-close"></a>
-                </div>
-
-                <div class="order-line__product">
-                    <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
-                                                                     alt=""></a>
-                    <div class="order-line__product-info">
-                        <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
-                        <div class="amount">
-                            <span class="down"></span>
-                            <input type="text" value="1"/>
-                            <span class="up"></span>
-                        </div>
-                        <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
-
-                    </div>
-
-                    <a href="#" class="btn-delete icon-close"></a>
-                </div>
-
-                <div class="order-line__product-total">
-                    <p>Общая стоимость:</p>
-                    <div class="the-sum-total">129 980 тенге</div>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <a href="order.html" class="btn">Оформить заказ</a>
-            </div>
-        </div>
-    </div>
 
     <div class="modal__div modal-order" id="one-click-modal">
         <div class="modal__wrapper">
@@ -1013,6 +1016,49 @@
                                                                                  class="input-box__title-links">Забыли
                             пароль?</a></label>
                         <input type="text" placeholder="Введите пароль" id="inputId8">
+                    </div>
+
+                    <div class="button-group">
+                        <input type="submit" class="subscribe-field__button btn btn--inline"
+                               value="Войти" required>
+                        <a href="#modal-registration" class="links open_modal">зарегистрироваться</a>
+                    </div>
+
+                    <div class="social-edit">
+                        <p>Или войдите с помощью соц.сетей:</p>
+                        <ul class="soc-box">
+                            <li><a href="#" class="soc-box__item"><i class="icon-vk"></i></a></li>
+                            <li><a href="#" class="soc-box__item"><i class="icon-fb"></i></a></li>
+                            <li><a href="#" class="soc-box__item"><i class="icon-insta"></i></a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__div modal-edit modal-favorite" id="modal__favorite">
+        <div class="modal__wrapper">
+            <div class="modal-head">
+                <div class="modal__close icon-close"></div>
+            </div>
+
+            <div class="modal-body modal-body-edit">
+                <h2>Войдите в аккаунт, чтобы сохранить избранное</h2>
+
+
+                <form method="post" class="form-modal">
+
+                    <div class="input-box input-box-error">
+                        <label for="inputId15" class="input-box__title">Телефон</label>
+                        <input type="text" placeholder="Введите телефон" id="inputId15">
+                        <div class="error-box">Введите корректный номер телефона</div>
+                    </div>
+                    <div class="input-box">
+                        <label for="inputId16" class="input-box__title">Пароль <a href="#"
+                                                                                 class="input-box__title-links">Забыли
+                            пароль?</a></label>
+                        <input type="text" placeholder="Введите пароль" id="inputId16">
                     </div>
 
                     <div class="button-group">

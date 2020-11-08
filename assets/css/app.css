@@ -11399,6 +11399,92 @@ figure figcaption {
     border-bottom: 1px solid rgba(54, 72, 89, 0.2);
 }
 
+/*новое модальное окно и кабинет */
+.modal-favorite h2 {
+    max-width: 299px;
+}
+
+.form-modal .input-box-error input {
+    border: 1px solid #A62525;
+}
+
+.error-box {
+    font-size: 12px;
+    color: #A62525;
+    margin: 7px 0 0;
+}
+
+.cabinet-drop__wrapper {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 10px);
+    z-index: 2;
+    background: #FFFFFF;
+    width: 240px;
+    box-shadow: 0 0 40px rgba(54, 72, 89, 0.1);
+    display: none;
+}
+
+.cabinet-drop__wrapper:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    background: #ffffff;
+    transform: rotate(45deg);
+    box-shadow: 0 0 40px rgba(54, 72, 89, 0.1);
+}
+
+.cabinet__menu {
+    list-style: none;
+
+}
+
+.cabinet__menu li {
+    border-bottom: 1px solid rgba(54, 72, 89, 0.2);
+}
+
+.cabinet__menu li:last-child {
+    border: none;
+}
+
+.cabinet__menu li a {
+    font-size: 12px;
+    padding: 11px 20px;
+    width: 100%;
+    color: rgba(54, 72, 89, 0.5);
+}
+
+.top-line {
+    overflow: visible;
+}
+
+.header-box__auth.click .cabinet-dropdown-wrapper {
+    color: #A62525;
+}
+
+.cabinet-dropdown__icon, .cabinet-dropdown__icon img, .cabinet-dropdown-wrapper:after {
+    transition: .3s ease;
+}
+
+.header-box__auth.click .cabinet-dropdown-wrapper:after {
+    background: url("../img/arrow-bottom-red.svg") no-repeat center;
+    -webkit-background-size: 100%;
+    background-size: 100%;
+}
+
+.header-box__auth.click .cabinet-dropdown__icon {
+    background: #A62525;
+
+}
+
+.header-box__auth.click .cabinet-dropdown__icon img {
+    filter: brightness(0) invert(1);
+}
+
+/*новое модальное окно и кабинет end*/
 
 /*main media*/
 @media (max-width: 1900px) {
@@ -13385,6 +13471,19 @@ figure figcaption {
         justify-content: center;
         padding: 20px 0;
     }
+
+    /*выпадающее меню кабинета*/
+    .cabinet-drop__wrapper {
+        right: auto;
+        left: 0;
+        width: 200px;
+    }
+
+    .cabinet-drop__wrapper:before {
+        right: auto;
+        left: 5px;
+    }
+
 }
 
 @media (max-width: 575px) {
