@@ -31,13 +31,17 @@ $(document).ready(function(){
 	});
     
 	$('.add-favorites').on('click', function(){
-		var $this = $(this);
-		if($this.hasClass('add')){
-			$this.parent('.anons-product__price').siblings('.anons-product__hide').children('.favorites-product').toggleClass('active');
-			$this.parent('.favorites-box').toggleClass('active');
-		} else{
-			$this.addClass('add');
-		}
+		// var $this = $(this);
+		// if($this.hasClass('add')){
+		// 	$this.parent('.anons-product__price').siblings('.anons-product__hide').find('.favorites-product').toggleClass('active');
+		// 	$this.parent('.favorites-box').toggleClass('active');
+		// } else{
+		// 	$this.addClass('add');
+		// }
+        var $this = $(this);
+        $this.parent('.anons-product__price').siblings('.anons-product__hide').find('.favorites-product').toggleClass('active');
+        $this.parent('.favorites-box').toggleClass('active');
+        $this.addClass('add');
 	});
 	
 	$('.favorites-product__item--clean').on('click', function(){
@@ -211,6 +215,22 @@ $(document).ready(function(){
                 slidesToShow: 3,
             }},{
             breakpoint: 480,
+            settings: {
+                slidesToShow: 2,
+            }}
+        ]
+    });
+
+    $('.product-slider-modal').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrow-slider--products .arrow-slider__item--prev'),
+        nextArrow: $('.arrow-slider--products .arrow-slider__item--next'),
+        dots: true,
+        appendDots: $('.slider-controll__dots--products'),
+        responsive: [{
+            breakpoint: 575,
             settings: {
                 slidesToShow: 2,
             }}
@@ -402,6 +422,8 @@ $(document).ready(function () {
             top: '45%'
         }, 200);
 
+        $('.product-slider-modal').slick('refresh');
+
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function () {
@@ -412,6 +434,8 @@ $(document).ready(function () {
                         top: '50%'
                     }, 200);
             });
+
+
     });
 
     close.click(function () {

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шаблон 2</title>
+    <title>Избранные товары</title>
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
@@ -105,7 +105,7 @@
         </div>
     </div>
     <div class="page-content">
-        <div class="header-wrapper slide">
+        <div class="header-wrapper">
             <div class="top-line">
                 <header class="header-box">
                     <div class="device-head-controll">
@@ -155,61 +155,149 @@
                 <div class="crumbs-box-wrapper">
                     <ul class="crumbs-box">
                         <li><a href="#">Главная</a></li>
-                        <li><a href="javascript:;">Каталог</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="javascript:;">Избранные товары</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="header-content">
-                <div class="header-slider">
-                    <div class="header-slider__item">
-                        <img src="assets/img/header-slider-1.jpg" alt="" class="header-slider__img">
-                        <div class="row expanded collapse">
-                            <div class="small-12 medium-6 large-6 column">
-                                <h1>Надежный поставщик складской техники</h1>
-                                <p>На складе компании насчитывается более 3 000 наименований запчастей и расходных
-                                    материалов для всех видов и моделей складской техники.</p>
-                                <a href="#" class="btn btn--inline">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-slider__item">
-                        <img src="assets/img/header-slider-1.jpg" alt="" class="header-slider__img">
-                        <div class="row expanded collapse">
-                            <div class="small-12 medium-6 large-6 column">
-                                <h1>Надежный поставщик складской техники</h1>
-                                <p>На складе компании насчитывается более 3 000 наименований запчастей и расходных
-                                    материалов для всех видов и моделей складской техники.</p>
-                                <a href="#" class="btn btn--inline">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="header-slider__item">
-                        <img src="assets/img/header-slider-1.jpg" alt="" class="header-slider__img">
-                        <div class="row expanded collapse">
-                            <div class="small-12 medium-6 large-6 column">
-                                <h1>Надежный поставщик складской техники</h1>
-                                <p>На складе компании насчитывается более 3 000 наименований запчастей и расходных
-                                    материалов для всех видов и моделей складской техники.</p>
-                                <a href="#" class="btn btn--inline">Узнать больше</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-slider-controll">
-                    <div class="header-slider-controll__item header-slider-controll__item--dots"></div>
-                    <div class="header-slider-controll__item header-slider-controll__item--arrow">
-                        <div class="arrow-slider arrow-slider--main hide-for-small-only">
-                            <button class="arrow-slider__item arrow-slider__item--prev" type="button"><i
-                                    class="icon-arrow-big"></i></button>
-                            <button class="arrow-slider__item arrow-slider__item--next" type="button"><i
-                                    class="icon-arrow-big right"></i></button>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <div class="content-box">
-            <h2>Заголовок</h2>
+            <h1>Избранные товары</h1>
+            <div class="filter-box-wrapper">
+                <div class="filter-box__button">
+                        <span class="show-for-large">
+                            Фильтр:
+                        </span>
+                    <a href="javascript:;" class="hide-for-large">Фильтр <i></i></a>
+                </div>
+                <div class="filter-box__sorts">
+                    <div class="filter-box__item">
+                        <div class="filter-box">
+                            <div class="filter-box__title"><a href="javascript:;">цена <i></i></a></div>
+                            <div class="filter-box__hide">
+                                <div id="slider-range"></div>
+                                <div class="slider-labels">
+                                    <span id="slider-range-value1"></span>
+                                    <span>–</span>
+                                    <span id="slider-range-value2"></span>
+                                </div>
+                                <form>
+                                    <input type="hidden" name="min-value" value="">
+                                    <input type="hidden" name="max-value" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box__item">
+                        <div class="filter-box selected">
+                            <div class="filter-box__title"><a href="javascript:;">страна-производитель <i></i></a></div>
+                            <div class="filter-box__hide">
+                                <div class="label-box">
+                                    <input type="checkbox" id="check" name="check"/>
+                                    <label for="check">Казахстан</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check1" checked name="check1"/>
+                                    <label for="check1">Россия</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check2" checked name="check2"/>
+                                    <label for="check2">Китай</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check3" name="check3"/>
+                                    <label for="check3">Тайвань</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check4" name="check4"/>
+                                    <label for="check4">Канада</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check5" name="check5"/>
+                                    <label for="check5">Польша</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-box__item">
+                        <div class="filter-box">
+                            <div class="filter-box__title"><a href="javascript:;">грузоподьемность <i></i></a></div>
+                            <div class="filter-box__hide">
+                                <div class="label-box">
+                                    <input type="checkbox" id="check6" name="check6"/>
+                                    <label for="check6">1 тонна</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check7" name="check7"/>
+                                    <label for="check7">2 тонны</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check8" name="check8"/>
+                                    <label for="check8">3 тонны</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check9" name="check9"/>
+                                    <label for="check9">4 тонны</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check10" name="check10"/>
+                                    <label for="check10">5 тонн</label>
+                                </div>
+                                <div class="label-box">
+                                    <input type="checkbox" id="check11" name="check11"/>
+                                    <label for="check11">6 тонн</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-box__item filter-box__item--default">
+                    <div class="filter-box">
+                        <div class="filter-box__title"><a href="javascript:;">Сортировать по: умолчанию <i></i></a>
+                        </div>
+                        <div class="filter-box__hide">
+                            <div class="label-box">
+                                <input type="radio" id="radio" name="radio"/>
+                                <label for="radio">Умолчанию</label>
+                            </div>
+                            <div class="label-box">
+                                <input type="radio" id="radio1" name="radio"/>
+                                <label for="radio1">Возрастанию цены</label>
+                            </div>
+                            <div class="label-box">
+                                <input type="radio" id="radio2" name="radio"/>
+                                <label for="radio2">Убыванию цены</label>
+                            </div>
+                            <div class="label-box">
+                                <input type="radio" id="radio3" name="radio"/>
+                                <label for="radio3">Популярности</label>
+                            </div>
+                            <div class="label-box">
+                                <input type="radio" id="radio4" name="radio"/>
+                                <label for="radio4">Наименованию</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-goods">
+                <h3>Нет товаров</h3>
+                <div class="box-text">
+                    <p>У вас нет избранных товаров, Пожалуйста вернитесь <a href="#" class="links">в каталог</a> и добавьте заинтересующие вас
+                        товары.</p>
+                </div>
+
+                <div class="no-goods-attention">
+                    <h4>Внимание!!!
+                        </h4>
+                    <div class="box-text">
+                        <p>Чтобы сохранить список и иметь доступ к нему с различных устройств, необходимо <a href="#"
+                                                                                                             class="links">авторизоваться</a>
+                            или <a href="#" class="links">зарегистрироваться</a></p>
+                    </div>
+                </div>
+            </div>
+
             <div class="anons-sale-wrapper outer-content">
                 <div class="anons-sale-item anons-sale-item--v1">
                     <a href="#" class="anons-sale">

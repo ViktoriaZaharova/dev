@@ -87,9 +87,9 @@
                 </li>
             </ul>
         </div>
-        <dov class="left-column-block left-column-block--small">
+        <div class="left-column-block left-column-block--small">
             <a href="#" class="link-service left"><span>Сервис</span> <i class="icon-service"></i></a>
-        </dov>
+        </div>
         <div class="left-column-block">
             <ul class="left-menu">
                 <li class="left-menu__item">
@@ -275,7 +275,7 @@
                                         при этом значительно сократить нагрузку на оператора.</p>
 
                                     <div class="characteristic-box" id="characteristic-box">
-                                     <div class="characteristic-box__title">характеристики</div>
+                                        <div class="characteristic-box__title">характеристики</div>
                                         <div class="characteristic-box__body">
                                             <ul class="characteristic-box__list">
                                                 <li>
@@ -341,9 +341,9 @@
                                 </div>
                                 <div class="price-box__count">190 990 тенге</div>
                             </div>
-<!--                            <div class="price-box__head">-->
-<!--                                <div class="price-box__report">ЦЕНА ПО ЗАПРОСУ</div>-->
-<!--                            </div>-->
+                            <!--                            <div class="price-box__head">-->
+                            <!--                                <div class="price-box__report">ЦЕНА ПО ЗАПРОСУ</div>-->
+                            <!--                            </div>-->
                             <div class="price-box__body">
                                 <a href="#basket-modal" class="btn open_modal">В корзину</a>
                                 <div class="modal__div" id="basket-modal">
@@ -359,16 +359,20 @@
 
                                         <div class="modal-body modal-body-basket">
                                             <div class="order-line__product">
-                                                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-2.png"
-                                                                                                 alt=""></a>
+                                                <a href="#" class="order-line__product-img"><img
+                                                        src="assets/img/product-anons-2.png"
+                                                        alt=""></a>
                                                 <div class="order-line__product-info">
-                                                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                                                    <a href="#" class="order-line__product-name">Штабелер Складская
+                                                        техника <br>B 10.30-EX</a>
                                                     <div class="amount">
                                                         <span class="down"></span>
                                                         <input type="text" value="1"/>
                                                         <span class="up"></span>
                                                     </div>
-                                                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+                                                    <div class="order-line__product-price order-line__product-sum">64
+                                                        990 тенге
+                                                    </div>
 
                                                 </div>
 
@@ -376,16 +380,20 @@
                                             </div>
 
                                             <div class="order-line__product">
-                                                <a href="#" class="order-line__product-img"><img src="assets/img/product-anons-5.png"
-                                                                                                 alt=""></a>
+                                                <a href="#" class="order-line__product-img"><img
+                                                        src="assets/img/product-anons-5.png"
+                                                        alt=""></a>
                                                 <div class="order-line__product-info">
-                                                    <a href="#" class="order-line__product-name">Штабелер Складская техника <br>B 10.30-EX</a>
+                                                    <a href="#" class="order-line__product-name">Штабелер Складская
+                                                        техника <br>B 10.30-EX</a>
                                                     <div class="amount">
                                                         <span class="down"></span>
                                                         <input type="text" value="1"/>
                                                         <span class="up"></span>
                                                     </div>
-                                                    <div class="order-line__product-price order-line__product-sum">64 990 тенге</div>
+                                                    <div class="order-line__product-price order-line__product-sum">64
+                                                        990 тенге
+                                                    </div>
 
                                                 </div>
 
@@ -419,7 +427,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p class="text-c">Самовывоз: сегодня, из магазина <br>Курьером: завтра, от 1 500 тенге</p>
+                                <p class="text-c">Самовывоз: сегодня, из магазина <br>Курьером: завтра, от 1 500 тенге
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -890,6 +899,7 @@
         </footer>
     </div>
 
+
     <div class="modal__div" id="modal-call">
         <div class="modal__wrapper">
             <div class="modal-head">
@@ -927,8 +937,6 @@
             </div>
         </div>
     </div>
-
-
 
     <div class="modal__div modal-order" id="one-click-modal">
         <div class="modal__wrapper">
@@ -1056,7 +1064,7 @@
                     </div>
                     <div class="input-box">
                         <label for="inputId16" class="input-box__title">Пароль <a href="#"
-                                                                                 class="input-box__title-links">Забыли
+                                                                                  class="input-box__title-links">Забыли
                             пароль?</a></label>
                         <input type="text" placeholder="Введите пароль" id="inputId16">
                     </div>
@@ -1180,6 +1188,300 @@
     <div class="overlay"></div><!-- Пoдлoжкa -->
 </div>
 
+<a href="#modal-order-accepted" class="btn open_modal">Заказ принят в обработку</a>
+<a href="#modal-successful-registration" class="btn open_modal">Успешная регистрация</a>
+<a href="#modal-thanks" class="btn open_modal">Спасибо!</a>
+<a href="#modal-edit2" class="btn open_modal">Неверная авторизация</a>
+<a href="#product-added" class="btn open_modal">ТОВАР ДОБАВЛЕН В КОРЗИНУ</a>
+
+<div class="modal__div modal-edit modal-added" id="product-added">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
+        </div>
+
+        <div class="modal-body modal-body-added">
+            <h2>ТОВАР ДОБАВЛЕН В КОРЗИНУ</h2>
+
+            <div class="product-wrapper-modal">
+                <div class="product-photo-item"><img src="assets/img/product-anons-1.png" alt=""></div>
+                <div class="product-wrapper-modal__info">
+                    <a href="#" class="name-product">Тележка гидравлическая MLS-2500</a>
+                    <div class="article-product">Артикул: 08854-20.000.00</div>
+
+                    <div class="price-wrapper">
+                        <div class="new-price">64 990 тенге</div>
+                        <div class="old-price">90 990 тенге</div>
+                    </div>
+                    <div class="amount">
+                        <span class="down"></span>
+                        <input type="text" value="1">
+                        <span class="up"></span>
+                    </div>
+                </div>
+
+                <div class="product-photo-item__order">
+                    <a href="order.html" class="btn">перейти в корзину</a>
+                    <a href="catalog-1.html" class="btn btn-default white">Продолжить покупки</a>
+
+                    <div class="total-modal">
+                        <p>В вашей корзине <strong>2 товара</strong></p>
+                        <p>на сумму <strong>227 848 ₽</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <div class="line-title-modal">
+                <h3>Популярные товары</h3>
+
+                <div class="arrow-slider arrow-slider--products hide-for-small-only">
+                    <button class="arrow-slider__item arrow-slider__item--prev" type="button"><i
+                            class="icon-arrow-big"></i></button>
+                    <button class="arrow-slider__item arrow-slider__item--next" type="button"><i
+                            class="icon-arrow-big right"></i></button>
+                </div>
+            </div>
+
+                <div class="product-slider-modal">
+                    <div class="slide">
+                        <div class="anons-product-wrapper">
+                            <div class="anons-product">
+                                <a href="" class="anons-product__img">
+                                    <img src="assets/img/product-anons-1.png" alt="">
+                                </a>
+                                <div class="anons-product__title">
+                                    Тележка гидравлическая <br>MLS-2500
+                                </div>
+                                <div class="anons-product__availability">
+                                    <img src="assets/img/svg/not-availability.svg" alt="">
+                                    Нет наличии
+                                </div>
+                                <div class="anons-product__price">
+                                    <span class="anons-product__price-text">19 990 тенге</span>
+                                    <a href="javascript:;" class="add-favorites"></a>
+                                </div>
+                                <div class="anons-product__hide">
+                                    <div class="favorites-product">
+                                        <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                        <a href="javascript:;"
+                                           class="favorites-product__item favorites-product__item--clean">Удалить из
+                                            избранных товаров</a>
+                                    </div>
+                                    <a href="" class="btn btn--disable">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="anons-product-wrapper">
+                            <div class="anons-product">
+                                <div class="anons-product__status">
+                                    <span>Акция</span>
+                                </div>
+                                <a href="" class="anons-product__img">
+                                    <img src="assets/img/product-anons-2.png" alt="">
+                                </a>
+                                <div class="anons-product__title">
+                                    Штабелер Складская техника <br>B 10.30-EX
+                                </div>
+                                <div class="anons-product__availability">
+                                    <img src="assets/img/svg/availability.svg" alt="">
+                                    В наличии
+                                </div>
+                                <div class="anons-product__price anons-product__price--sale">
+                                    <span class="anons-product__price-text">64 990 тенге <span>90 990 тенге</span></span>
+                                    <a href="javascript:;" class="add-favorites"></a>
+                                </div>
+                                <div class="anons-product__hide">
+                                    <div class="favorites-product">
+                                        <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                        <a href="javascript:;"
+                                           class="favorites-product__item favorites-product__item--clean">Удалить из
+                                            избранных товаров</a>
+                                    </div>
+                                    <a href="" class="btn">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="anons-product-wrapper">
+                            <div class="anons-product">
+                                <a href="" class="anons-product__img">
+                                    <img src="assets/img/product-anons-3.png" alt="">
+                                </a>
+                                <div class="anons-product__title">
+                                    Тележка гидравлическая <br>MLS-2500
+                                </div>
+                                <div class="anons-product__availability">
+                                    <img src="assets/img/svg/availability.svg" alt="">
+                                    В наличии
+                                </div>
+                                <div class="anons-product__price">
+                                    <span class="anons-product__price-text">19 990 тенге</span>
+                                    <a href="javascript:;" class="add-favorites"></a>
+                                </div>
+                                <div class="anons-product__hide">
+                                    <div class="favorites-product">
+                                        <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                        <a href="javascript:;"
+                                           class="favorites-product__item favorites-product__item--clean">Удалить из
+                                            избранных товаров</a>
+                                    </div>
+                                    <a href="" class="btn">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="anons-product-wrapper">
+                            <div class="anons-product">
+                                <a href="" class="anons-product__img">
+                                    <img src="assets/img/product-anons-4.png" alt="">
+                                </a>
+                                <div class="anons-product__title">
+                                    Ручные гидравлические штабелеры
+                                </div>
+                                <div class="anons-product__availability">
+                                    <img src="assets/img/svg/availability.svg" alt="">
+                                    В наличии
+                                </div>
+                                <div class="anons-product__price">
+                                    <span class="anons-product__price-text">19 990 тенге</span>
+                                    <a href="javascript:;" class="add-favorites add"></a>
+                                </div>
+                                <div class="anons-product__hide">
+                                    <div class="favorites-product">
+                                        <a href="#" class="favorites-product__item">Перейти к избранным товарам</a>
+                                        <a href="javascript:;"
+                                           class="favorites-product__item favorites-product__item--clean">Удалить из
+                                            избранных товаров</a>
+                                    </div>
+                                    <a href="" class="btn">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="slider-controll show-for-small-only">
+                <div class="slider-controll__dots slider-controll__dots--products">
+                </div>
+                <div class="arrow-slider arrow-slider--products">
+                    <button class="arrow-slider__item arrow-slider__item--prev" type="button"><i
+                            class="icon-arrow-big"></i></button>
+                    <button class="arrow-slider__item arrow-slider__item--next" type="button"><i
+                            class="icon-arrow-big right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div modal-edit" id="modal-edit2">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
+        </div>
+
+        <div class="modal-body modal-body-edit">
+            <h2>Войти</h2>
+
+
+            <form method="post" class="form-modal">
+
+                <div class="input-box input-box-error">
+                    <label for="inputId20" class="input-box__title">Телефон</label>
+                    <input type="text" value="+7 (923) 355-55-55" id="inputId20">
+                </div>
+                <div class="input-box input-box-error">
+                    <label for="inputId21" class="input-box__title">Пароль <a href="#"
+                                                                              class="input-box__title-links">Забыли
+                        пароль?</a></label>
+                    <input type="text" value="**********" id="inputId21">
+                </div>
+
+                <div class="error-box-modal">
+                    Телефон или пароль указаны неверно
+                </div>
+
+                <div class="button-group">
+                    <input type="submit" class="subscribe-field__button btn btn--inline"
+                           value="Войти" required>
+                    <a href="#modal-registration" class="links open_modal">зарегистрироваться</a>
+                </div>
+
+                <div class="social-edit">
+                    <p>Или войдите с помощью соц.сетей:</p>
+                    <ul class="soc-box">
+                        <li><a href="#" class="soc-box__item"><i class="icon-vk"></i></a></li>
+                        <li><a href="#" class="soc-box__item"><i class="icon-fb"></i></a></li>
+                        <li><a href="#" class="soc-box__item"><i class="icon-insta"></i></a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div modal-edit modal-order-wrap" id="modal-thanks">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
+        </div>
+
+        <div class="modal-body modal-body-order">
+            <h2>Спасибо!</h2>
+
+            <div class="box-text">
+                <p>Ваш отзыв принят! Он будет опубликован после проверки модератором.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div modal-edit modal-order-wrap" id="modal-successful-registration">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
+        </div>
+
+        <div class="modal-body modal-body-order">
+            <h2>Вы успешно зарегистрировались</h2>
+
+            <div class="box-text">
+                <p>Подтверждение отправлено на вашу электронную почту <a href="mailto:example@mail.ru"
+                                                                         class="link-phone">example@mail.ru</a></p>
+                <p>Для подтверждения регистрации перейдите по ссылке в письме. При возникновении вопросов - свяжитесь со
+                    службой поддержки по телефону
+                    <br><a href="tel:+77786714499" class="link-phone">+7 (778) 671 44 99</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal__div modal-edit modal-order-wrap" id="modal-order-accepted">
+    <div class="modal__wrapper">
+        <div class="modal-head">
+            <div class="modal__close icon-close"></div>
+        </div>
+
+        <div class="modal-body modal-body-order">
+            <h2>Заказ принят в обработку</h2>
+
+            <div class="box-text">
+                <p>Заказ успешно оформлен и принят в разработку. Счет будет выставлен в течении часа.</p>
+                <p>В случае возникновения вопросов наши менеджеры свяжутся с вами.</p>
+                <p>Если у вас остались вопросы, вы можете задать их по номеру <a href="tel:+77786714499"
+                                                                                 class="link-phone">+7 (778) 671 44
+                    99</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/foundation.js"></script>
@@ -1194,7 +1496,7 @@
 <script>
     $(".my-rating").starRating({
         starSize: 25,
-        callback: function(currentRating, $el){
+        callback: function (currentRating, $el) {
             // make a server call here
         }
     });
