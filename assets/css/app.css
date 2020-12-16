@@ -14847,6 +14847,7 @@ figure figcaption {
 
     .product-slider-modal .anons-product__price-text span {
         margin: 0 auto 0 0;
+        width: 100%;
     }
 
     .panel_heading {
@@ -15383,6 +15384,14 @@ figure figcaption {
 
     .modal-body-reviews .subscribe-field__button {
         max-width: none !important;
+    }
+
+    .product-slider-modal .anons-product-wrapper {
+        height: auto !important;
+    }
+
+    .product-slider-modal .anons-product-wrapper .btn {
+        font-size: 12px;
     }
 }
 
