@@ -485,3 +485,8 @@ $('.go_to').click(function () {
 $('.header-box__auth').click(function () {
    $(this).toggleClass('click').find('.cabinet-drop__wrapper').fadeToggle();
 });
+
+$('.panel_heading .block_title').click(function () {
+    $(this).toggleClass('in').next().slideToggle();
+    $('.panel_heading .block_title').not(this).removeClass('in').next().slideUp();
+});
