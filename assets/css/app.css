@@ -11841,26 +11841,53 @@ figure figcaption {
     align-items: center;
     text-align: center;
     border-radius: 50%;
-    border: 6px solid rgba(54, 72, 89, 0.2);
+    /*border: 6px solid rgba(54, 72, 89, 0.2);*/
     position: relative;
     color: #364859;
     font-size: 14px;
+    /*padding: 22px 0 0;*/
+    overflow: hidden;
+}
+.rating-diagram__content {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    border-radius: 50%;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     padding: 22px 0 0;
 }
 
-.rating-diagram:after {
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: url("../img/svg/ellipce.svg") no-repeat center;
-    -webkit-background-size: 100%;
-    background-size: 100%;
-    border-radius: 50%;
+.svg-circle {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    z-index: 7;
 }
+
+.svg-circle circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: rgba(54, 72, 89, 0.2);
+    stroke-width: 6;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.svg-circle circle:nth-child(2) {
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.svg-circle circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 110) / 100);
+    stroke: #A62525;
+}
+
 
 .rating-diagram-val {
     font-size: 42px;
